@@ -1,0 +1,14 @@
+.cardForm {
+  text-align: left;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .columnForm {
+    text-align: left;
+    input {
+      display: block;
+      margin: 10px;
+    }
+  }
+}
