@@ -6,9 +6,16 @@
   padding: 0 10px 0 10px;
 }
 
-.links a {
-  color: $color-light;
+.linkActive {
+  color: $color-warning;
+}
+
+a {
   text-decoration: none;
+  color: $color-light;
+}
+
+.links {
   font-weight: 700;
-  font-size: ($base-size*1.2);
+  font-size: ($base-size * 1.2);
 }
