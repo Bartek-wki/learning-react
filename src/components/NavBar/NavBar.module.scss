@@ -1,0 +1,36 @@
+@import "../../styles/settings.scss";
+
+nav {
+  height: 70px;
+  position: relative;
+  background-color: darken($color-dark, 3%);
+}
+
+.iconWrapper,
+.listWrapper {
+  height: 50px;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.iconWrapper {
+  width: 100px;
+  text-align: right;
+}
+
+.listWrapper {
+  left: 100px;
+  width: calc(99vw - 100px);
+}
+
+.icon::before {
+  padding-right: $base-size;
+  color: $color-light;
+  font-size: ($base-size * 2);
+}
+
+.list {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 50px;
+}
