@@ -1,0 +1,14 @@
+@import "../../styles/settings.scss";
+@import "../../styles/typography.scss";
+
+.links {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+.links a {
+  color: $color-light;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: ($base-size*1.2);
+}
