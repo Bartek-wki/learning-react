@@ -14,20 +14,17 @@ const SearchForm = () => {
   useEffect(() => {
     dispatch(resetSearchPhrase(title));
   }, []);
-  //dispatch(resetSearchPhrase(''));
-  console.log(title);
 
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(addSearchPhrase( title ));
-    console.log(title);
   }
 
   return (
     <form className={styles.searchForm} onSubmit={handleSubmit}>
-    <TextInput value={title} onChange={e => setTitle(e.target.value)} placeholder="Search..." />
-    <Button><span className="fa fa-search" /></Button>
-  </form>
+      <TextInput value={title} onChange={e => setTitle(e.target.value)} placeholder="Search..." />
+      <Button><span className="fa fa-search" /></Button>
+    </form>
   )
 }
 

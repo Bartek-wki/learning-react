@@ -11,3 +11,19 @@
   justify-content: space-between;
   font-weight: bold;
 }
+
+.icon::before {
+  padding-right: $base-size;
+  color: $color-dark;
+  font-size: ($base-size * 2);
+  padding: 0;
+}
+
+.isFavorite::before {
+  color: $color-warning;
+}
+
+.card button {
+  border: none;
+  background-color: $color-light;
+}
