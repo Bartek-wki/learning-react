@@ -6,7 +6,8 @@ import { getFilteredCards } from '../../redux/store';
 
 const Column = props => {
 
-const cards = useSelector(state => getFilteredCards(state, props.id));
+  const cards = useSelector(state => getFilteredCards(state, props.id));
+
   return (
     <article className={styles.column}>
       <h3 className={styles.title}>
@@ -14,7 +15,7 @@ const cards = useSelector(state => getFilteredCards(state, props.id));
         {props.title}
       </h3>
       <ul className={styles.cards}>
-        {cards.map(card => <Card key={card.id} title={card.title} />)}
+        {cards.map(card => <Card key={card.id} id={card.id} title={card.title} isFavorite={card.isFavorite} />)}
       </ul>
       <CardForm columnId={props.id}/>
     </article>

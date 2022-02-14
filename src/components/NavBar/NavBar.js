@@ -1,12 +1,12 @@
 import styles from './NavBar.module.scss';
 import NavLinks from '../NavLinks/NavLinks';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav>
       <div className={styles.iconWrapper}>
-        <a href="/" className={styles.icon + ' fa fa-tasks'}>
-        </a>
+        <Link to="/" className={styles.icon + ' fa fa-tasks'}></Link>
       </div>
       <div className={styles.listWrapper}>
         <ul className={styles.list}>
