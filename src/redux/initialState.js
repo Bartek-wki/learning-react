@@ -47,11 +47,7 @@ const initialState = {
       description: 'Lorem Ipsum'
    }
   ],
-  
-  /*seachPhrase: {
-    title: '',
-  },*/
-    seachPhrase: '',
+    searchPhrase: '',
 };
 
 export default initialState;
